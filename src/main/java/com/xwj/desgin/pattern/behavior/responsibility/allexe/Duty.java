@@ -1,5 +1,6 @@
 package com.xwj.desgin.pattern.behavior.responsibility.duty;
 
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.lang.annotation.*;
@@ -8,7 +9,7 @@ import java.lang.annotation.*;
 @Retention(RetentionPolicy.RUNTIME)
 @Inherited
 @Documented
-@Service
+@Component
 public @interface Duty {
     /** 业务场景 */
     String type() default "";
