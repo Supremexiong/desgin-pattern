@@ -1,7 +1,7 @@
-package com.xwj.desgin.pattern.behavior.responsibility.duty;
+package com.xwj.desgin.pattern.behavior.responsibility.allexe;
 
+import cn.hutool.core.collection.CollectionUtil;
 import org.springframework.core.annotation.AnnotationUtils;
-import org.springframework.util.CollectionUtils;
 
 import java.util.Comparator;
 import java.util.List;
@@ -40,7 +40,7 @@ public class HandlerChainManager<T, R> {
     * @author: xwenjun
     * @date: 2023/9/19 11:12
     */
-    public void setHandlerMap(List<IHandler<T, R>> handlers){
+    public void initHandlerMap(List<IHandler<T, R>> handlers){
          handlerMap = handlers.stream().sorted(Comparator.comparingInt(handler -> AnnotationUtils.findAnnotation(handler.getClass(), Duty.class).order()))
                 .collect(Collectors.groupingBy(handler -> AnnotationUtils.findAnnotation(handler.getClass(), Duty.class).type()));
     }
@@ -48,7 +48,7 @@ public class HandlerChainManager<T, R> {
     public R executeHandle(String type, T t){
         List<IHandler<T, R>> handlers = handlerMap.get(type);
         R r = null;
-        if (CollectionUtils.isEmpty(handlers)){
+        if (CollectionUtil.isNotEmpty(handlers)){
             for (IHandler<T, R> handler : handlers) {
                 r = handler.handle(t);
             }

@@ -1,4 +1,4 @@
-package com.xwj.desgin.pattern.behavior.responsibility.duty;
+package com.xwj.desgin.pattern.behavior.responsibility.allexe;
 
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;

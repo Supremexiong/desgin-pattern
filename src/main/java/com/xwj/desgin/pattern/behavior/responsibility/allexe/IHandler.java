@@ -1,4 +1,4 @@
-package com.xwj.desgin.pattern.behavior.responsibility.duty;
+package com.xwj.desgin.pattern.behavior.responsibility.allexe;
 
 /**
  * Filename:    IHandler.java
