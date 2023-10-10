@@ -1,4 +1,4 @@
-package com.xwj.desgin.pattern.behavior.responsibility.allexe;
+package com.xwj.desgin.pattern.behavior.responsibility;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
