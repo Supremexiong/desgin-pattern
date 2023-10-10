@@ -1,4 +1,4 @@
-package com.xwj.desgin.pattern.behavior.responsibility.allexe;
+package com.xwj.desgin.pattern.behavior.responsibility;
 
 import cn.hutool.core.collection.CollectionUtil;
 import org.springframework.core.annotation.AnnotationUtils;

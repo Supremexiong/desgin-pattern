@@ -1,7 +1,7 @@
-package com.xwj.desgin.pattern.behavior.responsibility.allexe.impl;
+package com.xwj.desgin.pattern.behavior.responsibility.impl;
 
-import com.xwj.desgin.pattern.behavior.responsibility.allexe.Duty;
-import com.xwj.desgin.pattern.behavior.responsibility.allexe.IHandler;
+import com.xwj.desgin.pattern.behavior.responsibility.Duty;
+import com.xwj.desgin.pattern.behavior.responsibility.IHandler;
 
 /**
  * Filename:    EncryptChainHandler.java

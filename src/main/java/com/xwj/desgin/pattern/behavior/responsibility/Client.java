@@ -1,8 +1,8 @@
-package com.xwj.desgin.pattern.behavior.responsibility.allexe;
+package com.xwj.desgin.pattern.behavior.responsibility;
 
-import com.xwj.desgin.pattern.behavior.responsibility.allexe.impl.EncryptChainHandler;
-import com.xwj.desgin.pattern.behavior.responsibility.allexe.impl.RequestChainHandler;
-import com.xwj.desgin.pattern.behavior.responsibility.allexe.impl.SignChainHandler;
+import com.xwj.desgin.pattern.behavior.responsibility.impl.EncryptChainHandler;
+import com.xwj.desgin.pattern.behavior.responsibility.impl.RequestChainHandler;
+import com.xwj.desgin.pattern.behavior.responsibility.impl.SignChainHandler;
 
 import java.util.ArrayList;
 import java.util.List;
